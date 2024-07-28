@@ -24,3 +24,35 @@ function getHumanChoice(){
     console.log("Wrong value entered");
 }
 var humanScore=0, computerScore=0;
+
+
+function playRound(humanChoice,compChoice)
+{
+    if (humanChoice=="ROCK")
+    {
+        if (compChoice=="SCISSORS")
+        return "win";
+        else if (compChoice=="PAPER")
+        return "lose";
+        else
+        return "tie";
+    }
+    if (humanChoice=="PAPER")
+        {
+            if (compChoice=="ROCK")
+            return "win";
+            else if (compChoice=="SCISSORS")
+            return "lose";
+            else
+            return "tie";
+        }
+    if (humanChoice=="SCISSORS")
+         {
+            if (compChoice=="PAPER")
+            return "win";
+            else if (compChoice=="ROCK")
+            return "lose";
+            else
+            return "tie";
+            }  
+}
